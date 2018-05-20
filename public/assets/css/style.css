@@ -1,0 +1,211 @@
+/* To stick the footer to the bottom of the page */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: inline;
+    background-color: #ff6724;
+}
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h2 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    padding-bottom: 10px;
+
+
+}
+
+div.col-xs-4.menu-brand {
+    font-size: 2em;
+}
+.menu-list > ul {
+    font-size: 1.5em;
+}
+
+i.fa-youtube-square, i.fa-android, i.fa-apple, i.fa-facebook, i.fa-twitter, i.fa-linkedin, i.fa-envelope {
+    font-size: 2em;
+}
+
+
+/*Carousel*/
+.carousel {
+    height: auto;
+    overflow: hidden;
+
+}
+.carousel .item {
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+.carousel .active.left, .carousel .active.right {
+    left:0;
+    opacity:0;
+    z-index:2;
+}
+.carousel .next, .carousel .prev {
+    left:0;
+    opacity:1;
+    z-index:1;
+}
+span.carousel-control-prev-icon, span.carousel-control-next-icon {
+    height: 40px;
+    width: 40px;
+}
+
+.carousel-item.active. img.img-responsive {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    position: relative;
+    display: inline;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid 10px saddlebrown;
+    padding: 10px;
+}
+
+
+.menu {
+    line-height:50px;
+    border: none;
+    margin-top: 0;
+    background-color: navy;
+    color: #ffffff;
+    position: relative;
+    min-height: 120px;
+    display: block;
+
+}
+
+.menu a {
+    color: #ff3e7f;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.menu-list {
+    padding: 0;
+    font-size: 0.9em;
+}
+
+.menu-list > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list > ul > li {
+    display: inline;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+footer {
+    width: 100%;
+    background-color: navy;
+    padding-top: 70px;
+    padding-bottom: 5px;
+    color: #c0bdc0;
+    /* To stick the footer to the bottom of the page */
+    position: absolute;
+    bottom: 0;
+    /* Set the fixed height of the footer here */
+    /*min-height: 180px;*/
+}
+
+footer a {
+    color: #c0bdc0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ff3e7f;
+    text-decoration: none;
+}
+
+
+
+/*@media */
+/*mobile phone*/
+@media screen and (min-width: 320px) and (max-width: 823px) {
+
+.col-xs-4.menu-list ul {
+    font-size: 1.1em;
+    display: block;
+    }
+img.img-responsive {
+
+    padding: 10px;
+    margin: 20px 10px;
+}
+footer {
+    display: none;
+}
+}
+
+/*small ipad*/
+/*@media screen and (max-width: 768px) {
+
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}*/
+
+/*ipad*/
+/*@media screen and (max-width: 1024px) {
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}*/
+/*desktop*/
+@media screen and (min-width: 1025px) {
+
+    footer {
+        width: 100%;
+        background-color: navy;
+        padding-top: 70px;
+        padding-bottom: 5px;
+        color: #c0bdc0;
+        /* To stick the footer to the bottom of the page */
+        position: absolute;
+        bottom: 0;
+        /* Set the fixed height of the footer here */
+        /*min-height: 180px;*/
+    }
+}
+
+
+
