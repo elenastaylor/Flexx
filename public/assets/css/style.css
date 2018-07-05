@@ -7,7 +7,7 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     display: inline;
-    background-color: #ff6724;
+    background-color: #98cdf0;
 }
 h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
@@ -30,7 +30,6 @@ div.col-xs-4.menu-brand {
 .menu-list > ul {
     font-size: 1.5em;
 }
-
 i.fa-youtube-square, i.fa-android, i.fa-apple, i.fa-facebook, i.fa-twitter, i.fa-linkedin, i.fa-envelope {
     font-size: 2em;
 }
@@ -73,11 +72,12 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
     margin-top: 10px;
     margin-right: auto;
     margin-left: auto;
-    border: solid 10px saddlebrown;
     padding: 10px;
 }
 
-
+.carousel {
+    margin-top: 100px;
+}
 .menu {
     line-height:50px;
     border: none;
@@ -91,7 +91,7 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
 }
 
 .menu a {
-    color: #ff3e7f;
+    color: #8a02d4;
     text-decoration: none;
     padding: 0 10px;
 }
@@ -118,7 +118,7 @@ footer {
     background-color: navy;
     padding-top: 70px;
     padding-bottom: 5px;
-    color: #c0bdc0;
+    color: #e0dfe6;
     /* To stick the footer to the bottom of the page */
     position: absolute;
     bottom: 0;
@@ -127,12 +127,12 @@ footer {
 }
 
 footer a {
-    color: #c0bdc0;
+    color: #d3d3d3;
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #ff3e7f;
+    color: #8a02d4;
     text-decoration: none;
 }
 
@@ -140,22 +140,39 @@ footer a:hover {
 
 /*@media */
 /*mobile phone*/
-@media screen and (min-width: 320px) and (max-width: 823px) {
+@media screen and (min-width: 319px) and (max-width: 823px) {
 
 .col-xs-4.menu-list ul {
-    font-size: 1.1em;
+    font-size: 0.9em;
     display: block;
     }
-img.img-responsive {
+div.container-fluid menu {
+    line-height: 30px;
+}
 
-    padding: 10px;
-    margin: 20px 10px;
+.carousel {
+        margin-top: 30px;
 }
 footer {
     display: none;
 }
 }
 
+@media screen and (min-height: 319px) and (max-height: 415px) {
+
+
+.carousel {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+div.container-fluid {
+    display: none;
+    }
+footer {
+    display: none;
+}
+}
 /*small ipad*/
 /*@media screen and (max-width: 768px) {
 
@@ -175,25 +192,24 @@ footer {
 }*/
 
 /*ipad*/
-/*@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-}*/
+.col-xs-4.menu-list ul {
+    font-size: 1.2em;
+    display: block;
+    }
+
+}
 /*desktop*/
 @media screen and (min-width: 1025px) {
 
-    footer {
+.row2 .menu-list ul {
+    display: inline;
+    float: right;
+}
+
+
+footer {
         width: 100%;
         background-color: navy;
         padding-top: 70px;
