@@ -12,13 +12,6 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- Latest compiled and minified JavaScript -->
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('.carousel').carousel({interval: 2000});
-        });
-    </script>
-
     <link rel="stylesheet" href="../assets/css/style.css">
 
     <!-- Include Google Fonts CSS -->
@@ -30,40 +23,44 @@
 
 <body>
 
-<div class="container-fluid menu text-center">
-    <div class="row1">
-        <div class="col-xs-4 menu-brand">
-            <a href="/"><img src="../assets/images/flexx_logo.png" width="150" height="150" alt="Flexx Logo">
-            </a>
-        </div>
+<!--Navbar Toggle-->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+    <a class="navbar-brand" href="/"><img src="../assets/images/flexx_logo.png" width="150" height="150" alt="Flexx Log"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="https://facebook.com/#/"><i class="fab fa-facebook fa-lg" title="Facebook"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/#/"><i class="fab fa-twitter fa-lg" title="Twitter"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://instagram.com/in/#/"><i class="fab fa-instagram fa-lg" title="Instagram"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../views/home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Games">Games</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../views/contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-youtube-square fa-lg" title="Youtube"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://android/#/"><i class="fab fa-android fa-lg" title="Android"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://apple/#/"><i class="fab fa-apple fa-lg" title="Apple"></i></a>
+            </li>
+        </ul>
     </div>
-
-    <!-- Image and text -->
-    <div class="row2">
-        <div class="col-xs-4 menu-list text-center">
-            <ul>
-                <li><a href="#"><i class="fab fa-youtube-square fa-lg" title="Youtube"></i></a></li>
-                <li><a href="https://android/#/"><i class="fab fa-android fa-lg" title="Android"></i></a></li>
-                <li><a href="https://apple/#/"><i class="fab fa-apple fa-lg" title="Apple"></i></a></li>
-            </ul>
-        </div>
-        <div class="col-xs-4 menu-list text-center">
-            <ul>
-                <li><a href="../views/home.html">Home</a></li>
-                <li><a href="/Games">Games</a></li>
-                <li><a href="../views/contact.html">Contact</a></li>
-            </ul>
-        </div>
-        <div class="col-xs-4 menu-list text-center">
-            <ul>
-                <li><a href="https://facebook.com/#/"><i class="fab fa-facebook fa-lg" title="Facebook"></i></a></li>
-                <li><a href="https://twitter.com/#/"><i class="fab fa-twitter fa-lg" title="Twitter"></i></a></li>
-                <li><a href="https://instagram.com/in/#/"><i class="fab fa-instagram fa-lg" title="Instagram"></i></a></li>
-                <!--<li><a href="https://email/#/"><i class="fas fa-envelope fa-lg" title="Envelope"></i></a></li>-->
-            </ul>
-        </div>
-    </div>
-</div>
+</nav>
 
 <!--About-->
 <div class="about">
@@ -74,7 +71,7 @@
 
 </div>
 
-<div class="card w-75">
+<div class="card">
     <div class="card-body">
         <h5 class="card-title">Looking for fun, engaging games for your kids to play?</h5>
         <p class="card-text">Our startup has just that to offer. Our games are designed

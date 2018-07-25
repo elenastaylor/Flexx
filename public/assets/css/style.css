@@ -9,12 +9,7 @@ body {
     display: inline;
     z-index: 1;
     opacity: 0.2;
-    /*background: url('../images/abstr.jpg');*/
-    /*background-size: cover;*/
-
-
     background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.6) 100%), url(../images/abstr.jpg);
-
     top: 0;
     left: 0;
     bottom: 0;
@@ -44,6 +39,7 @@ div.col-xs-4.menu-brand {
 }
 i.fa-youtube-square, i.fa-android, i.fa-apple, i.fa-facebook, i.fa-twitter, i.fa-instagram, i.fa-envelope {
     font-size: 2em;
+    color: #8a02d4;
 }
 
 
@@ -160,7 +156,7 @@ footer a:hover {
 }
 
 /*About, Contact*/
-.about, .contact {
+.about, .contact, .form-group {
     margin: 0 25%;
 }
 
@@ -179,7 +175,6 @@ footer a:hover {
 
 body {
     background-image: none;
-    background-color: lightblue;
 }
 div.container-fluid menu {
     line-height: 30px;
@@ -187,56 +182,46 @@ div.container-fluid menu {
 .menu a {
         padding: 0;
     }
+
 .carousel {
         margin-top: 30px;
 }
 footer {
     display: none;
-}
+ }
 }
 
 
 /*small screen*/
 @media screen and (min-height: 319px) and (max-height: 415px) {
 
-.col-xs-4.menu-list ul {
+    .col-xs-4.menu-list ul {
         display: inline;
     }
-body {
-    background-image: none;
-    background-color: lightblue;
-}
-.menu a {
-       padding: 0;
-}
-.carousel {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
 
-div.container-fluid {
-    display: none;
+    body {
+        background-image: none;
     }
-footer {
-    display: none;
-}
+
+    .menu a {
+        padding: 0;
+    }
+
+    .carousel {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    /*div.container-fluid {
+        display: none;
+        }*/
+    footer {
+        display: none;
+    }
 }
 /*small ipad*/
 /*@media screen and (max-width: 768px) {
 
-
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
 }*/
 
 /*ipad*/
@@ -248,22 +233,26 @@ footer {
     }
 footer {
     display: none;
-}
+ }
 }
 /*desktop*/
 @media screen and (min-width: 1025px) {
 
-div.col-xs-4.menu-brand img {
-        float: left;
-}
+    div.col-xs-4.menu-brand img {
+            float: left;
+    }
+    .row2 .menu-list ul {
+            display: inline;
+            float: right;
+        }
 
-.row2 .menu-list ul {
-        display: inline;
-        float: right;
+    .navbar li {
+        font-size: 1.2em;
+        padding-right: 12px;
+        padding-left: 12px;
     }
 
-
-footer {
+    footer {
         width: 100%;
         background-color: navy;
         padding-top: 70px;
